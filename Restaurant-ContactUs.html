@@ -1,0 +1,130 @@
+<!doctype html>
+<html>
+<head><title>Home Page</title>
+<style>
+@import url('restaurantStyles.css');
+h1 {
+text-align: center;
+
+}
+
+p {
+  outline: none;
+  text-decoration: none;
+  display: inline-block;
+  width: 10.5%;
+  margin-right: 0.625%;
+  text-align: center;
+  line-height: 3;
+  color: blue;
+}
+
+body{
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    
+}
+
+.id {
+   
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+address {
+text-align: center;
+}
+label { 
+ 
+  display: inline-block;
+  
+  width: 220px;
+  text-align: right;
+  margin-left: 18px;
+  font-size: 12px;
+}
+[type=submit]{
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    margin-left: 300px;
+    margin-top: 15px;
+    width: 120px;
+    height: 25px;   
+    font-size:14px;
+    font-weight:500;
+}
+textarea {
+  /* To properly align multiline text fields with their labels */
+  vertical-align:top ;
+
+  /* To give enough room to type some text */
+  height: 5em;
+}
+
+
+</style>
+
+
+</head>
+<body style="margin: 200px 0px 0px 0px;">
+<div id="topdiv">
+<h1>Big Bowl</h1>
+<hr/>
+
+<p>
+<a href="Restaurant-name.html">Home</a></p>
+<p><a href="Menu-restaurant.html">Menu</a></p>
+<p><a href="Restaurant-ContactUs.html">Contact Us</a></p><hr>
+</div>
+<br />
+<div class="container" padding-left: 30px;>
+<form action="">
+<div class="form-row">
+<label for="name">Name:</label>
+<input type="text" id="name">
+</div><br/>
+<div class="form-row">
+<label for="email">Email:</label>
+<input type="text" id="email">
+</div><br/>
+<div class="form-row">
+<label for="phone">Phone:</label>
+<input type="text" id="phone">
+</div><br/>
+<div class="form-row">
+<label for="multi">Reason for Inquiry:</label>
+            <select  id="reason" name="reason">
+            <option selected="selected">Catering</option>
+            <option>Private Party</option>
+             <option>Feedback</option>
+              <option>Other</option>
+</select>
+</div><br/>
+<div  class="form-row">
+    <label for="msg">Additional Information:</label>
+     <textarea id="msg" name="user_message" rows="6" ></textarea><br/>
+</div>
+<div class="form-row">
+ <label for="Have you been">Have you been to the Restaurant?</label>
+<input type="radio" id="answer"  checked>Yes
+<input type="radio" id="answer">No
+</div>
+<div class="form-row">
+ <label>Best days to contact you:</label>
+    <input type="checkbox" name="answer" value="mon" >M
+    <input type="checkbox" name="answer" value="tue">T
+    <input type="checkbox" name="answer" value="wed">W
+    <input type="checkbox" name="answer" value="thru">Th
+    <input type="checkbox" name="answer" value="fri">F<br />
+</div>
+<div class="button">
+     <input type="submit" id="sr" name="upvote" value="Send Request" />
+</div>
+
+</div>
+
+<hr />
+
+<div  id="bottomdiv">5675 N Clinton Drive Beverly Hills, CA <br />Telephone number: 985-8745-333</div> <br />
+
+  
+
+</body>
+
+</html>

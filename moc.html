@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+<head>
+<style>form {
+  /* Just to center the form on the page */
+  margin: 0 auto;
+  width: 400px;
+  
+}
+
+form div + div {
+  margin-top: 1em;
+}
+
+
+
+<!--label {
+  /* To make sure that all labels have the same size and are properly aligned */
+  display: inline-block;
+  width: 90px;
+  text-align: right;
+}-->
+
+input, textarea {
+  /* To make sure that all text fields have the same font settings
+     By default, textareas have a monospace font */
+  font: 1em sans-serif;
+
+  /* To give the same size to all text fields */
+ <!-- width: 300px;
+  box-sizing: border-box;-->
+
+  /* To harmonize the look & feel of text field border */
+  border: 1px solid #999;
+}
+
+input:focus, textarea:focus {
+  /* To give a little highlight on active elements */
+  border-color: #000;
+}
+
+textarea {
+  /* To properly align multiline text fields with their labels */
+  vertical-align:top ;
+
+  /* To give enough room to type some text */
+  height: 5em;
+}
+
+.button {
+  /* To position the buttons to the same position of the text fields */
+  padding-center: 90px; /* same size as the label elements */
+}
+
+
+
+
+</style>
+</head>
+<body>
+<form action="/fakepage.html" method="post">
+
+    <div>
+        <label for="name">First Name:</label>
+        <input type="text" id="name" name="user_name">
+    </div>
+   <div>
+        <label for="name">Last Name:</label>
+        <input type="text" id="lname" name="user_name">
+    </div>
+    <div>
+        <label for="mail">E-mail:</label>
+        <input type="email" id="mail" name="user_mail">
+    </div>
+<div>
+ <label>Type of License:</label>
+    <input type="radio" name="answer" value="Business" checked/>Business
+    <input type="radio" name="answer" value="Personal"/>Personal
+</div>
+
+<div>
+            <label for="multi">Reason:</label>
+            <select  id="reason" name="reason">
+            <option selected="selected">Select a Reason</option>
+            <option>Software Support</option>
+             <option>Hardware Support</option>
+              <option>Information Request</option>
+            
+          </select>
+        </div>
+
+<div>
+    <label for="msg">Additional Information:</label>
+     <textarea id="msg" name="user_message"></textarea></div>
+<div><input type="checkbox"  name="terms"> I accept the Terms and Conditions</div>
+<div><input type="button" value="Send Request"></div>
+ 
+
+
+</form>
+</body>
+
+</html>
