@@ -21,16 +21,18 @@ p {
   
 .wrapper{
    display:grid;
-   grid-template-columns:35% 35% 30% ;
-   grid-gap: -1em;
-   
-}
+   grid-template-columns:30% 30% 30% ;
+   grid-template-rows: 30% 30% 30% 10% ;
+   text-align: center;
+   }
+
 .wrapper > div{
      font-family: cursive;
-     padding:1em;
-    text-indent: 30px;
+     text-indent: 10px;
      
-}
+   }
+
+
 h4 {
     font-size:large;
 }
@@ -38,14 +40,33 @@ h4 {
 address {
       text-align: center;
     }
-
+body {
+    background-color: #922B21;
+}
+a {
+  font-family: sans-serif;
+  text-decoration: blue;
+  
+}
+a:visited {
+  color: Green;
+}
+  a:hover {
+  font-weight: bold;
+ } 
+a:active {
+  text-decoration: underline;
+}
+  td {
+  font-style: italic;
+} 
 
 
 </style>
 
 
 </head>
-<body style="margin: 200px 0px 10px 60px;">
+<body style="margin: 180px 0px 200px 10px;">
 <div id="topdiv">
 <h1>Big Bowl</h1>
 <hr/>
@@ -57,7 +78,7 @@ address {
 </div>
 
 <div class="wrapper" style="font-size:14px">
-<div><h4>Burger and Fries</h4>
+<div><h4 style="text-decoration: underline">Burger and Fries</h4>
 An american classic!<br />
 your choice- with or without cheese<br /> 
 Pickle,onion,tomato, and lettuce<br />
@@ -65,28 +86,28 @@ Served with outr famous thick cut<br />
  french fries<br />
     $7.95
 </div>
-<div><h4>Hot Dog and chips</h4>
+<div><h4 style="text-decoration: underline">Hot Dog and chips</h4>
 An american classic!<br />
 your choice-white or wheat bun<br />
 Relish,mustard, and ketchup<br />
 Served with our house-made chips<br />
 $7.95
 </div>
-<div><h4>Italian Sausage and Peppers</h4>
+<div><h4 style="text-decoration: underline">Italian Sausage and Peppers</h4>
 An all time favourite!<br />
 your choice-mild or spicy<br />
 cole slaw<br />
 Served with garlic mashers<br />
 $10.95
 </div>
-<div><h4>Tenderloin Sandwich and Chips</h4>
+<div><h4 style="text-decoration: underline">Tenderloin Sandwich and Chips</h4>
 Really Hits the Spot!<br />
 Plain or Sesame Seed bun<br />
 Pickle,onion,tomato, and lettuce<br />
 Served with our house-made chips<br />
 $8.95
 </div>
-<div><h4>House Salad</h4>
+<div><h4 style="text-decoration: underline">House Salad</h4>
         On the Lighter Side<br />
 Your choice-with or without cheese<br />
     Iceberg lettuce,tomatoes,peppers<br />
@@ -94,7 +115,7 @@ Your choice-with or without cheese<br />
 Served with a dinner roll<br />
 $6.95
 </div>
-<div><h4>Brisket Sandwich and Fries</h4>
+<div><h4 style="text-decoration: underline">Brisket Sandwich and Fries</h4>
        A Taste of Texas!<br />
 Smoked Brisket on thick-cut Texas<br />
    Toast<br />
@@ -102,9 +123,38 @@ Smoked Brisket on thick-cut Texas<br />
 Served with famous thick-cut<br />
   french fries 
 $7.95
-</div>
 </div><br />
-<hr />
+
+
+<div> 
+<table cellspacing="30">
+<thead>
+        <tr>
+          <th><span style="font-weight: bold; text-decoration:underline; font-size: 20px">Beverages</span</th>
+          
+      </tr>
+    </thead>
+         
+        <tr>
+          <td>Root Beer</td>
+          <td>$3.00</td>
+        </tr>
+        <tr>
+          <td>Bottled Water</td>
+          <td>$1.25</td>
+        </tr>
+        <tr>
+          <td>Lemonade</td>
+          <td>$1.00</td>
+        </tr>
+        <tr>
+          <td>Iced Tea</td>
+          <td>$1.25</td>
+        </tr>
+    
+</table>
+</div>
+</div>
 
 <div  id="bottomdiv">5675 N Clinton Drive Beverly Hills, CA <br />Telephone number: 985-8745-333</div> <br />
   
