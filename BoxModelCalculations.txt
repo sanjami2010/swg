@@ -1,0 +1,43 @@
+Calculating the Size of an Element
+When positioning elements, it is helpful to know how the browsers calculate the size. If you are trying to get the element’s total height, the calculation is:
+
+margin-top + border-top + padding-top + (height of the content)+ padding-bottom + border-bottom + margin-bottom
+
+If you are trying to get the element’s total width, the calculation is:
+
+margin-left + border-left + padding-left + (width of the content)+ padding-right + border-right + margin-right
+
+
+
+#div1 {
+
+height: 150px;
+
+width: 400px;
+
+margin: 20px;
+
+border: 1px solid red;
+
+padding: 10px;
+
+}
+
+For this object, calculate:
+
+Total height=20+1+10+150+10+1+20=212px;
+Total width=20+1+10+400+10+1+20=462px
+Browser calculated height=1+10+150+10+1=172;
+Browser calculated width=1+10+400+10+1=422;
+
+
+Browser calculated width: border-left + padding-left + (width of the content)+ padding-right + border-right
+
+Browser calculated height: border-top + padding-top + (height of the content)+ padding-bottom + border-bottom
+
+
+
+
+
+
+
